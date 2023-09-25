@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>m.farelalhamidi</title>
+   <style>
+    .container{
+        width: 100%;
+    }
+    .header{
+        display: grid;
+        grid-template-columns: 40% 20% 20% 20%;
+        grid-template-rows: 40px;
+        grid-template-areas: "sitetitle nav1 nav2 nav3";
+        gap: 5px;
+        padding-bottom: 10px;
+    }
+    .sitetitle{
+        grid-area:sitetitle nav1 nav2 nav3 ;
+        background-color: yellow;
+    }
+    .nav1,.nav2,.nav3{
+        grid-area:sitetitle nav1 nav2 nav3 ;
+        background-color: pink;
+    }
+    .nav{
+        display: grid;
+        grid-template-columns:77% 23%;
+        grid-template-rows: 40px;
+        grid-template-areas: "post ";
+        gap: 5px;
+        padding-bottom: 10px;
+    }
+
+    .posttitle{
+        grid-area: post ;
+        background-color: rgb(134, 233, 233);
+    }
+    .sid{
+       height: 150px;
+        background-color:coral;
+    }
+    .conten{
+        display: grid;
+        grid-template-columns: 10% 66% 20%;
+        grid-template-rows: 400px 67px 10px;
+        grid-template-areas: "postmeta mainconten ads "
+        "postmeta mainconten2 other" ;
+        gap: 5px;
+    }
+    .postmeta{
+        grid-area: postmeta mainconten ads;
+        background-color: rgb(87, 241, 177);
+       float: left;
+    }
+    .mainconten{
+       height: 200px;
+        background-color: grey;
+       padding: 5px;
+       float: left;
+    
+    }
+    .mainconten2{
+        grid-area: postmeta mainconten ads other;
+        height: 200px;
+        background-color: yellow;
+        
+    }
+    .ads{
+        grid-area: postmeta mainconten ads;
+        background-color: green;
+    }
+    .other{
+        grid-area:postmeta mainconten ads other;
+        background-color: slateblue;
+    }
+
+
+   </style>
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        <div class="sitetitle">Site Title</div>
+        <div class="nav1">Nav 1</div>
+        <div class="nav2">Nav 2</div>
+        <div class="nav3">Nav 3</div>
+    </div>
+    <div class="nav">
+        <div class="posttitle">Post Title</div>
+        <div class="sid">Side Bar</div>
+    </div>
+    <div class="conten">
+        <div class="postmeta">Post Meta</div>
+        <div class="mainconten">Main Content</div><br>
+        <div class="mainconten2">Main Content Image</div>
+        <div class="ads">Ads</div>
+        <div class="other">Other Stuffs</div>
+    </div>
+  
+
+
+
+    </div>
+</body>
+</html>

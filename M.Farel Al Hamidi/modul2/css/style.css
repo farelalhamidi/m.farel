@@ -1,0 +1,80 @@
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 80% 20%; 
+    grid-template-rows: 150px 400px auto 30px;
+    grid-template-areas:
+        "nav nav"
+        ;
+ 
+  }
+  
+ .nav{
+  color: #fff;
+    grid-area:nav;
+    background:black;
+    font-size: 18px;;
+    padding-top: 20px;
+    padding-left: 150px;
+ }
+  
+  .href,a{
+    padding-right: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-align: right;
+    text-decoration: none;
+    margin: 10px;
+    color: #fff;
+  }
+
+
+  .header{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 60% 65%;
+  grid-template-rows: 350px;
+  grid-template-areas: "ch1 ch2";
+ 
+  }
+  
+  .ch1{
+    grid-area: ch1 ch2;
+   padding-top: 25px;
+   padding-left:290px ;
+    grid-area: ch1 ;
+    background-color: rgb(43, 172, 223);
+  }
+  .ch2{
+    padding-top: 50px;
+    padding-right: 300px;
+    grid-area: ch2;
+    overflow: hidden;
+    background-color: rgb(43, 172, 223);
+  }
+  .conten{
+    display: grid;
+    width: 2610px;
+    grid-template-columns: 60% 40%;
+    grid-template-rows:400px;
+    grid-template-areas: "conten2 conten3 ";
+  }
+  .conten2{
+    grid-area: conten2 conten3;
+    background-color: antiquewhite;
+  }
+  .conten3{
+    grid-area:conten2 conten3; 
+    background-color: antiquewhite  ;
+  }
+
+
+
+
+
+
+
+
+
+
+
